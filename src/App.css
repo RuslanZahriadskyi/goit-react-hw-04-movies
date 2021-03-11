@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.go-back {
+  width: 400px;
+}
+
+.main-information {
+  max-width: 1100px;
+  display: flex;
+  outline: solid 1px black;
+  margin: 0 auto;
+}
+
+.film-info {
+  padding: 20px;
+}
+
+.genres {
+  display: flex;
+}
+
+.genres-item {
+  margin-right: 10px;
+}
+
+.additional-info {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 10px;
+  outline: solid 2px aqua;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+.link:hover {
+  color: chartreuse;
+}
+
+.info-title {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.information-container {
+  margin: 0 auto;
+}
+
+.button-go-back {
+  cursor: pointer;
+}
+
+.button-go-back:hover {
+  background-color: darkturquoise;
+  color: darkblue;
+  outline: none;
+}
+
+.error-message {
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.navItem {
+  padding: 6px 0;
+  margin-right: 15px;
+}
+.navLink {
+  --fill-color: #198ce6;
+  position: relative;
+  display: block;
+  padding: 4px 0;
+  font: 700 3rem Raleway, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px var(--fill-color);
+  background: linear-gradient(var(--fill-color) 0 100%) left / 0 no-repeat;
+  color: transparent;
+  background-clip: text;
+  transition: 0.5s linear;
+}
+.navLink:hover {
+  background-size: 100%;
+}

@@ -1,0 +1,19 @@
+.filmsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.film {
+  width: 600px;
+  padding: 10px 0;
+  background-color: antiquewhite;
+  text-align: center;
+  outline: solid 2px darkkhaki;
+  color: darkkhaki;
+  margin-bottom: 5px;
+}
+
+.filmLink:hover {
+  color: rgb(255, 13, 13);
+}

@@ -1,0 +1,32 @@
+.cast_container {
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.cast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cast_card {
+  margin-right: 10px;
+  width: calc((100% - 40px) / 5);
+  margin-bottom: 10px;
+  outline: solid 1px chocolate;
+}
+
+.cast_card:nth-child(5n) {
+  margin-right: 0;
+}
+
+.cast_img {
+  width: 100%;
+  display: block;
+}
+
+.actor_name,
+.actor_role {
+  text-align: center;
+}
