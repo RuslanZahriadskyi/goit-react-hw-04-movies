@@ -1,6 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react';
 import { NavLink, Route, Switch } from 'react-router-dom';
 import Loading from '../components/Loader';
+import s from '../components/Loader/Loader.module.css';
 import moviesAPI from '../api/api';
 
 import noMoviePoster from '../img/no-movie.jpg';
@@ -120,7 +121,7 @@ class MoviesDetailsPage extends Component {
           </div>
           <Suspense
             fallback={
-              <div className="loader-container">
+              <div className={s.loaderContainer}>
                 <Loading />
               </div>
             }

@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Loading from '../components/Loader';
 import moviesAPI from '../api/api';
 import Form from '../components/Form';
+import s from '../components/Loader/Loader.module.css';
 
 const FoundFilms = lazy(() =>
   import('../components/FoundFilms' /* webpackChunkName: "found-films-page" */),
@@ -60,7 +61,7 @@ class MoviesPage extends Component {
           {searchFilms && (
             <Suspense
               fallback={
-                <div className="loader-container">
+                <div className={s.loaderContainer}>
                   <Loading />
                 </div>
               }

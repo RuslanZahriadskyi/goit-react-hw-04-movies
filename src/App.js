@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import Navigation from './components/Navigation';
 import Loading from './components/Loader';
+import s from './components/Loader/Loader.module.css';
 
 const HomePage = lazy(() =>
   import('./views/HomePage' /* webpackChunkName: "home-page" */),
@@ -22,7 +23,7 @@ class App extends Component {
         <Navigation />
         <Suspense
           fallback={
-            <div className="loader-container">
+            <div className={s.loaderContainer}>
               <Loading />
             </div>
           }
