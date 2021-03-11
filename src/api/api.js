@@ -1,7 +1,8 @@
+const baseUrl = 'https://api.themoviedb.org/3/';
+const apiKey = '507be643ea20df937acafa47be25902e';
+
 const getTrendingMovie = () => {
-  return fetch(
-    'https://api.themoviedb.org/3/trending/movie/week?api_key=507be643ea20df937acafa47be25902e',
-  )
+  return fetch(`${baseUrl}trending/movie/week?api_key=${apiKey}`)
     .then(res => {
       return res.json();
     })
@@ -11,30 +12,23 @@ const getTrendingMovie = () => {
 };
 
 const getMovie = movieID => {
-  return fetch(
-    `https://api.themoviedb.org/3/movie/${movieID}?api_key=507be643ea20df937acafa47be25902e`,
-  ).then(res => {
+  return fetch(`${baseUrl}movie/${movieID}?api_key=${apiKey}`).then(res => {
     return res.json();
   });
 };
 
 const getMovieCast = movieID => {
-  return fetch(
-    `https://api.themoviedb.org/3/movie/${movieID}/credits?api_key=507be643ea20df937acafa47be25902e`,
-  )
+  return fetch(`${baseUrl}movie/${movieID}/credits?api_key=${apiKey}`)
     .then(res => {
       return res.json();
     })
     .then(({ cast }) => {
-      console.log(cast);
       return cast;
     });
 };
 
 const getMovieReviews = movieID => {
-  return fetch(
-    `https://api.themoviedb.org/3/movie/${movieID}/reviews?api_key=507be643ea20df937acafa47be25902e`,
-  )
+  return fetch(`${baseUrl}movie/${movieID}/reviews?api_key=${apiKey}`)
     .then(res => {
       return res.json();
     })
@@ -47,9 +41,7 @@ const getMovieReviews = movieID => {
 };
 
 const getMoviesBySearch = search => {
-  return fetch(
-    `https://api.themoviedb.org/3/search/movie?query=${search}&api_key=507be643ea20df937acafa47be25902e`,
-  )
+  return fetch(`${baseUrl}search/movie?query=${search}&api_key=${apiKey}`)
     .then(res => {
       return res.json();
     })

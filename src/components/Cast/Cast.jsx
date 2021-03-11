@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import moviesAPI from '../../api/api';
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
+import moviesAPI from '../../api/api';
 import noActorImg from '../../img/no-actor.jpg';
 import s from './Cast.module.css';
 
@@ -21,7 +22,7 @@ class Cast extends Component {
     return (
       <div className={s.cast_container}>
         <ul className={s.cast}>
-          {casts.map(({ name, character, profile_path, id }) => {
+          {casts.map(({ name, character, profile_path }) => {
             return (
               <li key={uuidv4()} className={s.cast_card}>
                 <img
@@ -46,3 +47,7 @@ class Cast extends Component {
 }
 
 export default Cast;
+
+Cast.propTypes = {
+  moviesId: PropTypes.string,
+};

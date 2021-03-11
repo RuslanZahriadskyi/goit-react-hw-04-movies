@@ -52,7 +52,6 @@ class MoviesDetailsPage extends Component {
 
     const { getDate } = this.state;
     const { match, location } = this.props;
-    console.log(location);
 
     return (
       getDate && (
@@ -121,7 +120,7 @@ class MoviesDetailsPage extends Component {
           </div>
           <Suspense
             fallback={
-              <div>
+              <div className="loader-container">
                 <Loading />
               </div>
             }

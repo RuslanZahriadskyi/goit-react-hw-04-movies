@@ -22,7 +22,7 @@ class App extends Component {
         <Navigation />
         <Suspense
           fallback={
-            <div>
+            <div className="loader-container">
               <Loading />
             </div>
           }

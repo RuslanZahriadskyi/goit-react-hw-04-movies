@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 import moviesAPI from '../../api/api';
 import s from './Reviews.module.css';
 
@@ -45,3 +46,7 @@ class Reviews extends Component {
 }
 
 export default Reviews;
+
+Reviews.propTypes = {
+  moviesId: PropTypes.string,
+};

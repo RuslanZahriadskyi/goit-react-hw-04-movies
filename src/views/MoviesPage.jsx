@@ -60,7 +60,7 @@ class MoviesPage extends Component {
           {searchFilms && (
             <Suspense
               fallback={
-                <div>
+                <div className="loader-container">
                   <Loading />
                 </div>
               }

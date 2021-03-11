@@ -110,3 +110,6 @@ a {
 .error-message {
   text-align: center;
 }
+.loader-container {
+  margin: 0 auto;
+}
