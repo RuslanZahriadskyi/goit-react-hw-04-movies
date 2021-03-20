@@ -127,14 +127,8 @@ class MoviesDetailsPage extends Component {
             }
           >
             <Switch>
-              <Route
-                path={`${match.path}/cast`}
-                render={props => <Cast {...props} />}
-              />
-              <Route
-                path={`${match.path}/reviews`}
-                render={props => <Reviews {...props} />}
-              />
+              <Route path={`${match.path}/cast`} component={Cast} />
+              <Route path={`${match.path}/reviews`} component={Reviews} />
             </Switch>
           </Suspense>
         </div>
